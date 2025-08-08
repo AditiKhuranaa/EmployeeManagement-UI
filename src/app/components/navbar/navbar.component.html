@@ -1,0 +1,14 @@
+<nav class="navbar">
+  <div class="logo-container">
+    <img class="logo-img" src="assets/LogoEMP.png" alt="EMP Logo">
+    <span class="logo-text">Employee Management Portal</span>
+  </div>
+  <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+  <ul [ngClass]="{ 'active': menuOpen }">
+    <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+    <li><a routerLink="/employees" routerLinkActive="active">Employee List</a></li>
+    <li><a routerLink="/medical" routerLinkActive="active">Medical Details</a></li>
+    <li><a routerLink="/charts" routerLinkActive="active">Charts</a></li>
+    <li><a routerLink="/settings" routerLinkActive="active">Settings</a></li>
+  </ul>
+</nav>
